@@ -158,7 +158,7 @@
         "minimap.background":"#f0f0f0",
         "minimap.errorHighlight":"#e51400",
         "minimap.findMatchHighlight":"#0000002a",
-        "minimap.selectionHighlight":"#291996cb",
+        "minimap.selectionHighlight":"#196e966e",
         "minimap.warningHighlight":"#e9a700",
         "minimapGutter.addedBackground":"#81b88b",
         "minimapGutter.deletedBackground":"#ca4b51",
@@ -1498,7 +1498,8 @@
         {
             "scope":"invalid.illegal",
             "settings":{
-                "foreground":"#FFFFFF"
+                "foreground":"#ff0000",
+                "fontStyle": "strikethrough"
             }
         },
         {
@@ -1510,19 +1511,22 @@
         {
             "scope":"invalid.broken",
             "settings":{
-                "foreground":"#FFFFFF"
+                "foreground":"#ff4d4d",
+                "fontStyle": "strikethrough"
             }
         },
         {
             "scope":"invalid.deprecated",
             "settings":{
-                "foreground":"#FFFFFF"
+                "foreground":"#ff4d4d",
+                "fontStyle": "strikethrough"
             }
         },
         {
             "scope":"invalid.unimplemented",
             "settings":{
-                "foreground":"#FFFFFF"
+                "foreground":"#ff4d4d",
+                "fontStyle": "strikethrough"
             }
         },
         {
@@ -2307,8 +2311,15 @@
                 "fontStyle":"italic strikethrough"
             }
         },
+        {
+            "scope":"constant.character.entity.numeric.decimal.html",
+            "settings":{
+                "foreground":"#0077aa"
+
+            }
+        },
         //:::::::
-        //:::::::Syntax css
+        //:::::::Syntax css, sass, scss
         //::::::::::::::::::::::::::::::::::::::::::::::::::::::::
         {
             "scope":"entity.other.attribute-name.class.css",
@@ -2316,6 +2327,13 @@
                 "foreground":"#669900",
 
             }
+        },
+        {
+            "scope":"entity.other.attribute-name.id.css",
+            "settings":{
+                "foreground":"#669900",
+                "fontStyle": "bold underline"
+            },
         },
         {
             "scope":"entity.name.tag.css",
@@ -2420,6 +2438,12 @@
             "settings":{
                 "foreground":"#669900",
 
+            }
+        },
+        {
+            "scope": "invalid.illegal.expected-array-separator.json.comments",
+            "settings":{
+                "foreground":"#C70039"
             }
         },
         //:::::::
