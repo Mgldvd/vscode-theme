@@ -1,0 +1,27 @@
+{
+    "name": "mgldvd",
+    "displayName": "Mgldvd Theme",
+    "description": "Mgldvd",
+    "version": "1.2.0",
+    "publisher": "Mgldvd",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mgldvd/vscode-theme"
+    },
+    "icon": "images/icon.png",
+    "contributes": {
+        "themes": [
+            {
+                "label": "Mgldvd",
+                "uiTheme": "vs",
+                "path": "./themes/Mgldvd-color-theme.json"
+            }
+        ]
+    }
+}
