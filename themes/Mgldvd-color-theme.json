@@ -126,7 +126,7 @@
         "inputOption.activeBackground":"#0000001c",
         "inputOption.activeBorder":"#1c87cf00",
         "inputOption.activeForeground":"#6e6a86",
-        "list.activeSelectionBackground":"#00000000",
+        "list.activeSelectionBackground":"#c4ecff80",
         "list.activeSelectionForeground":"#6e6a86",
         "list.dropBackground":"#00000000",
         "list.focusBackground":"#6e6a8614",
@@ -158,7 +158,7 @@
         "minimap.background":"#f0f0f0",
         "minimap.errorHighlight":"#e51400",
         "minimap.findMatchHighlight":"#0000002a",
-        "minimap.selectionHighlight":"#57527918",
+        "minimap.selectionHighlight":"#291996cb",
         "minimap.warningHighlight":"#e9a700",
         "minimapGutter.addedBackground":"#81b88b",
         "minimapGutter.deletedBackground":"#ca4b51",
@@ -200,7 +200,7 @@
         "scrollbarSlider.background":"#c9c9c973",
         "scrollbarSlider.hoverBackground":"#c4d8e594",
         "scrollbarSlider.activeBackground":"#c1d9e9b0",
-        "selection.background":"#6e6a8616",
+        "selection.background":"#62ead1b6",
         "settings.focusedRowBackground":"#ffffff07",
         "settings.headerForeground":"#6e6a86",
         "sideBar.background":"#f0f0f0",
@@ -453,7 +453,7 @@
         //"list.invalidItemForeground":"#b89500",
         //"list.warningForeground":"#855f00",
         //"minimap.foregroundOpacity":"#000000",
-        //"minimap.selectionOccurrenceHighlight":"#c9c9c9",
+        "minimap.selectionOccurrenceHighlight":"#e48100",
         //"minimapSlider.activeBackground":"#5b577380",
         //"minimapSlider.background":"#6e6a8680",
         //"minimapSlider.hoverBackground":"#6e6a8680",
@@ -2422,5 +2422,40 @@
 
             }
         },
+        //:::::::
+        //:::::::Syntax Markdown
+        //::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+        {
+            "scope":"punctuation.definition.heading.markdown",
+            "settings":{
+                "foreground":"#e77102"
+            }
+        },
+        {
+            "scope":"entity.name.section.markdown",
+            "settings":{
+                "foreground":"#000000",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope":"meta.paragraph.markdown",
+            "settings":{
+                "foreground":"#333333",
+            }
+        },
+        {
+            "scope":"punctuation.definition.markdown",
+            "settings":{
+                "foreground":"#C70039",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope":"fenced_code.block.language.markdown",
+            "settings":{
+                "foreground":"#0077aa"
+            }
+        }
     ],
 }
