@@ -20,19 +20,19 @@ ext install Mgldvd.mgldvd
 
 ## 🖼️ Screenshots
 
-### html:
+### [html](images/code-html.png):
 
 ![html](images/code-html.png)
 
-### js:
+### [js](images/code-js.png):
 
 ![js](images/code-js.png)
 
-### scss:
+### [scss](images/code-scss.png):
 
 ![scss](images/code-scss.png)
 
-### markdown:
+### [markdown](images/code-md.png):
 
 ![markdown](images/code-md.png)
 
