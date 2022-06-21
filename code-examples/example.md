@@ -29,9 +29,15 @@ Enable typographer option to see result.
 test.. test... test..... test?..... test!....
 
 !!! note Warning note
+
 !!! warning Warning note
+
 !!! success Warning note
+
 !!! danger Warning note
+    ```txt
+    Block code
+    ```
 
 "Smartypants, double quotes" and 'single quotes'
 

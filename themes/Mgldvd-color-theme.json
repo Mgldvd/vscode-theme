@@ -2480,6 +2480,43 @@
             "settings":{
                 "foreground":"#0077aa"
             }
-        }
+        },
+        {
+            "scope":"markup.quote.markdown",
+            "settings":{
+                "foreground":"#1187EE"
+            }
+        },
+        {
+            "scope":"punctuation.definition.list.begin.markdown",
+            "settings":{
+                "foreground":"#1187EE"
+            }
+        },
+        {
+            "scope":"punctuation.definition.list.begin.markdown",
+            "settings":{
+                "foreground":"#1187EE"
+            }
+        },
+        {
+            "scope":"markup.bold.markdown",
+            "settings":{
+                "foreground":"#8560d7",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope":"meta.separator.markdown",
+            "settings":{
+                "foreground":"#C70039",
+            }
+        },
+        {
+            "scope":"markup.raw.block.markdown",
+            "settings":{
+                "foreground":"#b58e31",
+            }
+        },
     ],
 }
