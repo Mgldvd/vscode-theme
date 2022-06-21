@@ -1,5 +1,6 @@
 # VS Code Theme - Mgldvd
 
+⚠️ Note that this theme is for both **vscode** and **syntax**.
 
 ![Preview](images/icon-small.png)
 
@@ -14,6 +15,26 @@ ext install Mgldvd.mgldvd
 🔗 [Theme Preview:](https://raw.githubusercontent.com/mgldvd/vscode-theme/master/images/preview.png)
 
 ![Preview](images/preview.png)
+
+----------
+
+## 🖼️ Screenshots
+
+### html:
+
+![html](images/code-html.png)
+
+### js:
+
+![js](images/code-js.png)
+
+### scss:
+
+![scss](images/code-scss.png)
+
+### markdown:
+
+![markdown](images/code-md.png)
 
 ----------
 
