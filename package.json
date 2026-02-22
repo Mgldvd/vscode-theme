@@ -2,7 +2,7 @@
     "name": "mgldvd",
     "displayName": "Mgldvd Theme",
     "description": "Mgldvd",
-    "version": "1.4.4",
+    "version": "1.4.5",
     "scripts": {
         "watch:theme": "env -u APPIMAGE mise watch --postpone theme-reload"
     },

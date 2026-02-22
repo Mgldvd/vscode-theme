@@ -1,34 +1,39 @@
 {
+    // Decision: Explorer color tuning happens here first.
+    // Keep these keys in sync with themes/Mgldvd-color-theme.json.
     "workbench.colorCustomizations": {
         // Explorer / sidebar tree
         "sideBar.background": "#f0f0f0",
-        "sideBar.foreground": "#6e6a86",
+        "sideBar.foreground": "#615d75",
         "sideBar.border": "#00000008",
-        "sideBarTitle.foreground": "#6e6a86",
+        "sideBarTitle.foreground": "#615d75",
         "sideBarSectionHeader.background": "#00000000",
         "sideBarSectionHeader.border": "#00000000",
-        "sideBarSectionHeader.foreground": "#6e6a86",
-        "tree.indentGuidesStroke": "#6e6a86a5",
+        "sideBarSectionHeader.foreground": "#615d75",
+        "tree.indentGuidesStroke": "#615d75a5",
         "list.activeSelectionBackground": "#c4ecff80",
-        "list.activeSelectionForeground": "#6e6a86",
+        "list.activeSelectionForeground": "#615d75",
         "list.inactiveSelectionBackground": "#c4ecff80",
         "list.inactiveSelectionForeground": "#1d1641",
         "list.hoverBackground": "#c4ecff80",
         "list.hoverForeground": "#484558",
-        "list.focusBackground": "#6e6a8614",
-        "list.focusForeground": "#6e6a86",
-        "list.highlightForeground": "#6e6a86",
+        "list.focusBackground": "#615d7514",
+        "list.focusForeground": "#615d75",
+        "list.highlightForeground": "#615d75",
         "list.deemphasizedForeground": "#652d90",
 
         // Explorer git file decorations
         "gitDecoration.addedResourceForeground": "#52c739",
         "gitDecoration.conflictingResourceForeground": "#fd3aba",
         "gitDecoration.deletedResourceForeground": "#e6271e",
-        "gitDecoration.ignoredResourceForeground": "#bcbbbe",
+        "gitDecoration.ignoredResourceForeground": "#b8b4c0",
         "gitDecoration.modifiedResourceForeground": "#ff8329",
-        "gitDecoration.stageDeletedResourceForeground": "#6e6a86",
+        "gitDecoration.stageDeletedResourceForeground": "#615d75",
         "gitDecoration.stageModifiedResourceForeground": "#ff8329",
-        "gitDecoration.submoduleResourceForeground": "#6e6a86",
-        "gitDecoration.untrackedResourceForeground": "#6e6a86"
-    }
+        "gitDecoration.submoduleResourceForeground": "#615d75",
+        "gitDecoration.untrackedResourceForeground": "#615d75"
+    },
+    "explorer.decorations.colors": true,
+    "explorer.decorations.badges": true,
+    "git.decorations.enabled": true
 }
