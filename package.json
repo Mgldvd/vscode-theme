@@ -2,7 +2,7 @@
     "name": "mgldvd",
     "displayName": "Mgldvd Theme",
     "description": "Mgldvd",
-    "version": "1.4.5",
+    "version": "1.4.6",
     "publisher": "Mgldvd",
     "engines": {
         "vscode": "^1.68.0"
