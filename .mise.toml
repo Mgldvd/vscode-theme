@@ -1,0 +1,4 @@
+[tasks.theme-reload]
+description = "Reload VS Code when the theme file changes"
+run = "code --reuse-window --command workbench.action.reloadWindow"
+sources = ["themes/Mgldvd-color-theme.json"]
