@@ -1,6 +1,6 @@
 # VS Code Theme - Mgldvd
 
-⚠️ Note that this theme is for both **vscode** and **syntax**.
+**Note** that this theme is for both **vscode** and **syntax**.
 
 ![Preview](images/icon-small.png)
 
