@@ -1,0 +1,34 @@
+{
+    "workbench.colorCustomizations": {
+        // Explorer / sidebar tree
+        "sideBar.background": "#f0f0f0",
+        "sideBar.foreground": "#6e6a86",
+        "sideBar.border": "#00000008",
+        "sideBarTitle.foreground": "#6e6a86",
+        "sideBarSectionHeader.background": "#00000000",
+        "sideBarSectionHeader.border": "#00000000",
+        "sideBarSectionHeader.foreground": "#6e6a86",
+        "tree.indentGuidesStroke": "#6e6a86a5",
+        "list.activeSelectionBackground": "#c4ecff80",
+        "list.activeSelectionForeground": "#6e6a86",
+        "list.inactiveSelectionBackground": "#c4ecff80",
+        "list.inactiveSelectionForeground": "#1d1641",
+        "list.hoverBackground": "#c4ecff80",
+        "list.hoverForeground": "#484558",
+        "list.focusBackground": "#6e6a8614",
+        "list.focusForeground": "#6e6a86",
+        "list.highlightForeground": "#6e6a86",
+        "list.deemphasizedForeground": "#652d90",
+
+        // Explorer git file decorations
+        "gitDecoration.addedResourceForeground": "#52c739",
+        "gitDecoration.conflictingResourceForeground": "#fd3aba",
+        "gitDecoration.deletedResourceForeground": "#e6271e",
+        "gitDecoration.ignoredResourceForeground": "#bcbbbe",
+        "gitDecoration.modifiedResourceForeground": "#ff8329",
+        "gitDecoration.stageDeletedResourceForeground": "#6e6a86",
+        "gitDecoration.stageModifiedResourceForeground": "#ff8329",
+        "gitDecoration.submoduleResourceForeground": "#6e6a86",
+        "gitDecoration.untrackedResourceForeground": "#6e6a86"
+    }
+}
