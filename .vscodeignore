@@ -1,0 +1,14 @@
+.vscode/**
+.vscode-test/**
+.ai
+.ai/**
+.github
+.github/**
+.opencode
+.opencode/**
+scripts/**
+node_modules/**
+*.vsix
+.gitignore
+.mise.toml
+vsc-extension-quickstart.md

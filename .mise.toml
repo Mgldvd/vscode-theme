@@ -10,3 +10,15 @@ description = "Build VSIX without version bump (test only)"
 run = """
 npx @vscode/vsce package -o mgldvd-test.vsix
 """
+
+[tasks.sync-colors]
+description = "Sync colors from .vscode/settings.json into theme JSON"
+run = """
+./scripts/sync-colors-from-settings.sh
+"""
+
+[tasks.sync-colors-dry]
+description = "Preview color sync from settings to theme (no file changes)"
+run = """
+DRY_RUN=1 ./scripts/sync-colors-from-settings.sh
+"""
