@@ -1,11 +1,12 @@
-[tasks.theme-reload]
-description = "Reload VS Code when the theme file changes"
-run = "code --reuse-window --command workbench.action.reloadWindow"
-sources = ["themes/Mgldvd-color-theme.json"]
-
 [tasks.build]
 description = "Bump to next patch version and build VSIX"
 run = """
 npm version patch --no-git-tag-version &&
 npx @vscode/vsce package
+"""
+
+[tasks.build-test]
+description = "Build VSIX without version bump (test only)"
+run = """
+npx @vscode/vsce package -o mgldvd-test.vsix
 """

@@ -2,36 +2,60 @@
     // Decision: Explorer color tuning happens here first.
     // Keep these keys in sync with themes/Mgldvd-color-theme.json.
     "workbench.colorCustomizations": {
+
         // Explorer / sidebar tree
-        "sideBar.background": "#f0f0f0",
-        "sideBar.foreground": "#615d75",
-        "sideBar.border": "#00000008",
-        "sideBarTitle.foreground": "#615d75",
-        "sideBarSectionHeader.background": "#00000000",
-        "sideBarSectionHeader.border": "#00000000",
-        "sideBarSectionHeader.foreground": "#615d75",
-        "tree.indentGuidesStroke": "#615d75a5",
-        "list.activeSelectionBackground": "#c4ecff80",
-        "list.activeSelectionForeground": "#615d75",
-        "list.inactiveSelectionBackground": "#c4ecff80",
-        "list.inactiveSelectionForeground": "#1d1641",
-        "list.hoverBackground": "#c4ecff80",
-        "list.hoverForeground": "#484558",
-        "list.focusBackground": "#615d7514",
-        "list.focusForeground": "#615d75",
-        "list.highlightForeground": "#615d75",
-        "list.deemphasizedForeground": "#652d90",
+        // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+        // "sideBar.background": "#f0f0f0",
+        // "sideBar.foreground": "#615d75",
+        // "sideBar.border": "#00000008",
+        // "sideBarTitle.foreground": "#615d75",
+        // "sideBarSectionHeader.background": "#00000000",
+        // "sideBarSectionHeader.border": "#00000000",
+        // "sideBarSectionHeader.foreground": "#615d75",
+        // "tree.indentGuidesStroke": "#615d75a5",
+        // "list.activeSelectionBackground": "#c4ecff80",
+        // "list.activeSelectionForeground": "#615d75",
+        // "list.inactiveSelectionBackground": "#c4ecff80",
+        // "list.inactiveSelectionForeground": "#1d1641",
+        // "list.hoverBackground": "#c4ecff80",
+        // "list.hoverForeground": "#484558",
+        // "list.focusBackground": "#615d7514",
+        // "list.focusForeground": "#615d75",
+        // "list.highlightForeground": "#615d75",
+        // "list.deemphasizedForeground": "#652d90",
 
         // Explorer git file decorations
-        "gitDecoration.addedResourceForeground": "#52c739",
-        "gitDecoration.conflictingResourceForeground": "#fd3aba",
-        "gitDecoration.deletedResourceForeground": "#e6271e",
-        "gitDecoration.ignoredResourceForeground": "#b8b4c0",
-        "gitDecoration.modifiedResourceForeground": "#ff8329",
-        "gitDecoration.stageDeletedResourceForeground": "#615d75",
-        "gitDecoration.stageModifiedResourceForeground": "#ff8329",
-        "gitDecoration.submoduleResourceForeground": "#615d75",
-        "gitDecoration.untrackedResourceForeground": "#615d75"
+        // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+        // "gitDecoration.addedResourceForeground": "#52c739",
+        // "gitDecoration.conflictingResourceForeground": "#fd3aba",
+        // "gitDecoration.deletedResourceForeground": "#e6271e",
+        // "gitDecoration.ignoredResourceForeground": "#b8b4c0",
+        // "gitDecoration.modifiedResourceForeground": "#ff8329",
+        // "gitDecoration.stageDeletedResourceForeground": "#615d75",
+        // "gitDecoration.stageModifiedResourceForeground": "#ff8329",
+        // "gitDecoration.submoduleResourceForeground": "#615d75",
+        // "gitDecoration.untrackedResourceForeground": "#615d75",
+
+        // Status bar
+        // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+        // "statusBar.background": "#f0f0f0",
+        // "statusBar.foreground": "#170f49",
+        // "statusBar.border": "#0800ff00",
+        // "statusBar.noFolderBackground": "#f0f0f0",
+        // "statusBar.noFolderForeground": "#6e6a86",
+        // "statusBar.noFolderBorder": "#ff000000",
+        // "statusBar.debuggingBackground": "#f0f0f0",
+        // "statusBar.debuggingForeground": "#6e6a86",
+        // "statusBar.debuggingBorder": "#ff000000",
+        // "statusBarItem.activeBackground": "#ffffff25",
+        // "statusBarItem.hoverBackground": "#ffffff00",
+        // "statusBarItem.remoteBackground": "#d7827e",
+        // "statusBarItem.remoteForeground": "#ffffff",
+        // "statusBarItem.warningBackground": "#75beff",
+        // "statusBarItem.warningForeground": "#170f49"
     },
     "explorer.decorations.colors": true,
     "explorer.decorations.badges": true,

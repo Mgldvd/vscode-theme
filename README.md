@@ -16,7 +16,7 @@ ext install Mgldvd.mgldvd
 
 ![Preview](images/preview.png)
 
-----------
+---
 
 ## 🎨 Principal Colors
 
@@ -31,7 +31,7 @@ ext install Mgldvd.mgldvd
 | ![#80A339](https://via.placeholder.com/14/80A339/80A339.png) | `#80A339` | Strings |
 | ![#F51340](https://via.placeholder.com/14/F51340/F51340.png) | `#F51340` | Functions / strong emphasis |
 
-----------
+---
 
 ## 🖼️ Screenshots
 
@@ -51,7 +51,38 @@ ext install Mgldvd.mgldvd
 
 ![markdown](images/code-md.png)
 
-----------
+---
+
+
+# Mgldvd Theme – Quick Dev Guide
+
+## Edit
+
+- Theme file: `themes/Mgldvd-color-theme.json`
+- Extension config: `package.json`
+
+## Run (development)
+
+1. Open this project in VS Code.
+2. Press `F5` (Run Extension).
+3. In the new window, open Command Palette and run: `Preferences: Color Theme`.
+4. Select: `Mgldvd`.
+
+## Update theme
+
+- Edit `themes/Mgldvd-color-theme.json`.
+- In the dev window, run `Developer: Reload Window` to refresh.
+
+## Package (optional)
+
+```bash
+npm i -g @vscode/vsce
+vsce package
+```
+
+This creates a `.vsix` file you can install locally.
+
+---
 
 **If you are looking for something to "README", here is something by Tolstoy:**
 
