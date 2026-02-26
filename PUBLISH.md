@@ -48,6 +48,8 @@ git push
 
 ## 4) Publish to VS Code Marketplace
 
+- https://dev.azure.com/mgldvd/_usersSettings/tokens
+
 ```bash
 npx @vscode/vsce publish
 ```
