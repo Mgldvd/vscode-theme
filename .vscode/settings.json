@@ -54,7 +54,7 @@
         "statusBarItem.hoverBackground": "#ffffff00",
         "statusBarItem.remoteBackground": "#d7827e",
         "statusBarItem.remoteForeground": "#ffffff",
-        "statusBarItem.warningBackground": "#75beff",
+        "statusBarItem.warningBackground": "#CAE2F6",
         "statusBarItem.warningForeground": "#170f49"
     },
     "explorer.decorations.colors": true,
