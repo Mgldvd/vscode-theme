@@ -1,5 +1,7 @@
 # VS Code Theme - Mgldvd
 
+Mgldvd is a clean light theme with soft contrasts and vivid accents for code readability.
+
 **Note** that this theme is for both **vscode** and **syntax**.
 
 ![Preview](images/icon-small.png)
