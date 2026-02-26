@@ -51,3 +51,30 @@ ext install Mgldvd.mgldvd
 
 ![markdown](images/code-md.png)
 
+---
+
+## 🚀 GitHub Release & Package Pipeline
+
+This repository now includes two GitHub Actions workflows:
+
+- **Package workflow**: builds a `.vsix` artifact when a tag like `v1.4.8` is pushed.
+- **Release workflow**: creates a GitHub Release and uploads the `.vsix` when a tag like `v1.4.8` is pushed.
+
+Workflow files:
+
+- `.github/workflows/package.yml`
+- `.github/workflows/release.yml`
+
+### Release flow
+
+1. Bump `version` in `package.json`
+2. Commit and push
+3. Create and push a matching tag:
+
+```bash
+git tag v1.4.8
+git push origin v1.4.8
+```
+
+The workflow validates that tag and `package.json` version match.
+

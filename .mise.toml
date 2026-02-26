@@ -11,6 +11,15 @@ run = """
 npx @vscode/vsce package -o mgldvd-test.vsix
 """
 
+[tasks.publish]
+description = "Publish current version and trigger GitHub Release"
+run = """
+npx @vscode/vsce publish
+VERSION=$(node -p "require('./package.json').version")
+git tag "v${VERSION}"
+git push origin "v${VERSION}"
+"""
+
 [tasks.sync-colors]
 description = "Sync colors from .vscode/settings.json into theme JSON"
 run = """

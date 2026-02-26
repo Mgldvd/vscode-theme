@@ -1,0 +1,48 @@
+name: Release VSIX
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Read extension version
+        id: meta
+        run: |
+          echo "version=$(node -p \"require('./package.json').version\")" >> "$GITHUB_OUTPUT"
+
+      - name: Validate tag matches package version
+        run: |
+          EXPECTED_TAG="v${{ steps.meta.outputs.version }}"
+          if [ "${GITHUB_REF_NAME}" != "$EXPECTED_TAG" ]; then
+            echo "Tag (${GITHUB_REF_NAME}) does not match package.json version ($EXPECTED_TAG)."
+            exit 1
+          fi
+
+      - name: Build VSIX package
+        run: |
+          npx @vscode/vsce package -o "mgldvd-${{ steps.meta.outputs.version }}.vsix"
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: Mgldvd v${{ steps.meta.outputs.version }}
+          generate_release_notes: true
+          files: |
+            mgldvd-${{ steps.meta.outputs.version }}.vsix

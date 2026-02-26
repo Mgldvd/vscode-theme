@@ -4,59 +4,41 @@ This guide assumes your Marketplace credentials are **already configured** on th
 
 ---
 
-## 1) Sync theme colors (optional)
-
-```bash
-mise run sync-colors-dry
-```
-
-If needed:
-
-```bash
-mise run sync-colors
-```
-
----
-
-## 2) Build a new version
+## ✅ Step 1: Build new version
 
 ```bash
 mise run build
 ```
 
-This will:
+This command will:
 - bump patch version in `package.json`
 - build the VSIX package
 
----
-
-## 3) Commit and push
+Then commit and push:
 
 ```bash
 git add package.json themes/Mgldvd-color-theme.json .vscode/settings.json
-```
-
-```bash
 git commit -m "🔧 chore(release): bump version and package theme"
-```
-
-```bash
 git push
 ```
 
 ---
 
-## 4) Publish to VS Code Marketplace
-
-- https://dev.azure.com/mgldvd/_usersSettings/tokens
+## 🚀 Step 2: Publish
 
 ```bash
-npx @vscode/vsce publish
+mise run publish
 ```
+
+This command will:
+- publish to VS Code Marketplace (`npx @vscode/vsce publish`)
+- create git tag `v<package.json version>`
+- push the tag to origin
+- trigger `.github/workflows/release.yml` (GitHub Release + VSIX asset)
 
 ---
 
-## Test package only (no version bump)
+## 🧪 Optional test package (no publish)
 
 ```bash
 mise run build-test
