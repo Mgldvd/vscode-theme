@@ -1,0 +1,35 @@
+name: Package VSIX
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Read extension version
+        id: meta
+        run: |
+          echo "version=$(node -p \"require('./package.json').version\")" >> "$GITHUB_OUTPUT"
+
+      - name: Build VSIX package
+        run: |
+          npx @vscode/vsce package -o "mgldvd-${{ steps.meta.outputs.version }}.vsix"
+
+      - name: Upload VSIX artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mgldvd-vsix
+          path: mgldvd-*.vsix
+          if-no-files-found: error
