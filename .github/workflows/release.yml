@@ -4,6 +4,11 @@ on:
   push:
     tags:
       - "v*.*.*"
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Branch, tag, or SHA to release from (optional)"
+        required: false
 
 permissions:
   contents: write
@@ -15,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.ref }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -36,7 +43,18 @@ jobs:
           fi
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
 
+      - name: Resolve release tag
+        id: release_tag
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            TAG_NAME="${GITHUB_REF_NAME}"
+          else
+            TAG_NAME="v${{ steps.meta.outputs.version }}"
+          fi
+          echo "tag=$TAG_NAME" >> "$GITHUB_OUTPUT"
+
       - name: Validate tag matches package version
+        if: github.event_name == 'push'
         run: |
           EXPECTED_TAG="v${{ steps.meta.outputs.version }}"
           if [ "${GITHUB_REF_NAME}" != "$EXPECTED_TAG" ]; then
@@ -51,7 +69,7 @@ jobs:
       - name: Create GitHub release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref_name }}
+          tag_name: ${{ steps.release_tag.outputs.tag }}
           name: Mgldvd v${{ steps.meta.outputs.version }}
           generate_release_notes: true
           files: |
