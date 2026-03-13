@@ -55,28 +55,41 @@ ext install Mgldvd.mgldvd
 
 ---
 
-## 🚀 GitHub Release & Package Pipeline
+## 🚀 Development & Release
 
-This repository now includes two GitHub Actions workflows:
+This project uses [mise](https://mise.jdx.dev/) to manage tasks.
 
-- **Package workflow**: builds a `.vsix` artifact when a tag like `v1.4.8` is pushed.
-- **Release workflow**: creates a GitHub Release and uploads the `.vsix` when a tag like `v1.4.8` is pushed.
+### Available tasks
 
-Workflow files:
-
-- `.github/workflows/package.yml`
-- `.github/workflows/release.yml`
+| Command | Description |
+|---|---|
+| `mise run build` | Bump to next patch version and build `.vsix` |
+| `mise run build-test` | Build `.vsix` without version bump (test only) |
+| `mise run publish` | Publish current version and trigger GitHub Release |
+| `mise run sync-colors` | Sync colors from `.vscode/settings.json` into theme JSON |
+| `mise run sync-colors-dry` | Preview color sync from settings to theme (no file changes) |
 
 ### Release flow
 
-1. Bump `version` in `package.json`
-2. Commit and push
-3. Create and push a matching tag:
+1. Build and bump the version:
 
 ```bash
-git tag v1.4.8
-git push origin v1.4.8
+mise run build
 ```
 
-The workflow validates that tag and `package.json` version match.
+2. Commit and push:
+
+```bash
+git add package.json *.vsix
+git commit -m "chore(release): bump version"
+git push
+```
+
+3. Publish and tag:
+
+```bash
+mise run publish
+```
+
+The publish task automatically creates and pushes the matching git tag, which triggers the GitHub Release workflow.
 
