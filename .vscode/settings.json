@@ -55,7 +55,10 @@
         "statusBarItem.remoteBackground": "#d7827e",
         "statusBarItem.remoteForeground": "#ffffff",
         "statusBarItem.warningBackground": "#CAE2F6",
-        "statusBarItem.warningForeground": "#170f49"
+        "statusBarItem.warningForeground": "#170f49",
+
+        "statusBarItem.prominentBackground": "#f4c8d7",
+        "statusBarItem.prominentForeground": "#020202",
     },
     "explorer.decorations.colors": true,
     "explorer.decorations.badges": true,

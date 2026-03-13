@@ -2,7 +2,7 @@
     "name": "mgldvd",
     "displayName": "Mgldvd Theme",
     "description": "A clean light VS Code theme with soft contrasts and vivid accents.",
-    "version": "1.4.7",
+    "version": "1.4.8",
     "publisher": "Mgldvd",
     "engines": {
         "vscode": "^1.68.0"
